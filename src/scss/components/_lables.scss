@@ -1,0 +1,94 @@
+.lables {
+	padding: 70px 0 28px;
+	&__title {
+		text-align: center;
+		color: var(--accent);
+		margin-bottom: 50px;
+		font-size: 48px;
+		transform-origin: center;
+	}
+	&__list {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 42px;
+	}
+	&__item {
+		display: inherit;
+		transition: all var(--transition);
+		&:hover {
+			transform: var(--scale-hover);
+		}
+	}
+	&__link img {
+		height: 47px;
+	}
+}
+@media (max-width: 1440px) {
+	.lables {
+		&__list {
+			gap: 32px;
+		}
+	}
+}
+@media (max-width: 1280px) {
+	.lables {
+		padding: 46px 0 0;
+		&__list {
+			gap: 30px;
+		}
+		&__title {
+			font-size: 34px;
+			line-height: 34px;
+			letter-spacing: 2.38px;
+			margin-bottom: 37px;
+			transform-origin: center;
+		}
+		&__link img {
+			height: 34px;
+		}
+	}
+}
+
+@media (max-width: 1024px) {
+	.lables {
+		&__list {
+			gap: 26px;
+		}
+		&__title {
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.lables {
+		&__list {
+			gap: 20px;
+		}
+		&__title {
+			font-size: 30px;
+			line-height: 1;
+			margin-bottom: 30px;
+		}
+	}
+}
+@media (max-width: 400px) {
+	.lables {
+		&__title {
+			margin-bottom: 30px;
+		}
+		&__link img {
+			height: 28px;
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.lables {
+		&__title {
+			font-weight: 800;
+			font-size: 26px;
+		}
+	}
+}
